@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather Forcast</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body class="background">
+        <div class="content">
+            <div class="search-container">
+                <!-- <img src="./images/icons/search.png" alt="search" /> -->
+                <input
+                    type="text"
+                    class="search-bar"
+                    placeholder="City name.."
+                />
+                <button
+                    class="submit-btn btn btn-outline-light p-2"
+                    type="button"
+                >
+                    <img
+                        src="./images/icons/search.png"
+                        alt="search"
+                        height="25px"
+                    />
+                    <!-- <span class="visually-hidden">Dismiss</span> -->
+                </button>
+                <!-- <button class="submit-btn"> -->
+
+                <!-- </button> -->
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 weather-detail1">
+                        <img
+                            class="image-weather mt-3"
+                            src="./images/clear-sunny.png"
+                            alt=""
+                        />
+                        <h1 class="weather-content">
+                            <span class="weather-desc">Descrip</span>,
+                            <span class="weather-temp"></span>&deg;C
+                        </h1>
+                    </div>
+
+                    <div class="col-12 col-md-6 weather-detail2">
+                        <div class="weather-content mt-5">
+                            <div class="mainf">
+                                <h1>
+                                    <span class="weather-city">City</span> -
+                                    <span class="weather-country">
+                                        Country</span
+                                    >
+                                </h1>
+                            </div>
+                            <div class="mainf">
+                                <h5 class="weather-day fonts">
+                                    <span>Day</span>
+                                </h5>
+                            </div>
+                            <div class="main-content">
+                                <div class="properties">
+                                    <p class="weather-humudity fonts">
+                                        <img
+                                            class="property-image"
+                                            src="./images/icons/water drop2.png"
+                                            alt="water drop"
+                                        />
+                                        <span class="humidity-value"> 50</span>
+                                        %
+                                    </p>
+                                </div>
+                                <div class="properties">
+                                    <p class="weather-wind fonts">
+                                        <img
+                                            class="property-image"
+                                            src="./images/icons/wind.png"
+                                            alt="wind"
+                                        /><span class="wind-value">5</span>
+                                        m/s
+                                    </p>
+                                </div>
+                                <div class="properties">
+                                    <p class="weather-pressure fonts">
+                                        <img
+                                            class="property-image"
+                                            src="./images/icons/pressure.png"
+                                            alt="pressure"
+                                        />
+                                        <span class="pressure-value">
+                                            1040</span
+                                        >
+                                        hpa
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ////////next 5 days/////////// -->
+
+                    <div class="container box-bg mt-3 fonts">
+                        <!-- day1 -->
+                        <div>
+                            <div class="box mt-4">
+                                <div class="next-weather-img">
+                                    <img
+                                        class="next-day-1-img next-day-img"
+                                        src="./images/clear-sunny.png"
+                                        alt="weather img"
+                                    />
+                                </div>
+                                <div class="day-temp">
+                                    <p class="next-1-weather-day">Saturday</p>
+
+                                    <h5 class="next-day-temp">
+                                        <span class="next-1-day-temp"> 30</span>
+                                        &deg;C
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- day2 -->
+                        <div>
+                            <div class="box mt-4">
+                                <div class="next-weather-img">
+                                    <img
+                                        class="next-day-2-img next-day-img"
+                                        src="./images/clear-sunny.png"
+                                        alt="weather img"
+                                    />
+                                </div>
+                                <div class="day-temp">
+                                    <p class="next-2-weather-day">Sunday</p>
+                                    <h5 class="next-day-temp">
+                                        <span class="next-2-day-temp">30</span>
+                                        &deg;C
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- day3 -->
+                        <div>
+                            <div class="box mt-4">
+                                <div class="next-weather-img">
+                                    <img
+                                        class="next-day-3-img next-day-img"
+                                        src="./images/clear-sunny.png"
+                                        alt="weather img"
+                                    />
+                                </div>
+                                <div class="day-temp">
+                                    <p class="next-3-weather-day">Monday</p>
+                                    <h5 class="next-day-temp">
+                                        <span class="next-3-day-temp">30</span>
+                                        &deg;C
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- day4 -->
+                        <div>
+                            <div class="box mt-4">
+                                <div class="next-weather-img">
+                                    <img
+                                        class="next-day-4-img next-day-img"
+                                        src="./images/clear-sunny.png"
+                                        alt="weather img"
+                                    />
+                                </div>
+                                <div class="day-temp">
+                                    <p class="next-4-weather-day">Tuesday</p>
+                                    <h5 class="next-day-temp">
+                                        <span class="next-4-day-temp">30</span>
+                                        &deg;C
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- day5 -->
+                        <div>
+                            <div class="box-last mt-4">
+                                <div class="next-weather-img">
+                                    <img
+                                        class="next-day-5-img next-day-img"
+                                        src="./images/clear-sunny.png"
+                                        alt="weather img"
+                                    />
+                                </div>
+                                <div class="day-temp">
+                                    <p class="next-5-weather-day">Wednesday</p>
+                                    <h5 class="next-day-temp">
+                                        <span class="next-5-day-temp">30</span>
+                                        &deg;C
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="./script.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
