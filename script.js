@@ -6,7 +6,9 @@ const next_4_weather_img = document.querySelector(".next-day-4-img");
 const next_5_weather_img = document.querySelector(".next-day-5-img");
 const background_img = document.querySelector("background");
 
+let all_result_time;
 let apiKey = "cce930f08cacb20cf68ebac8469d7eac";
+let apiKey2 = "fcb7f9fc8cceb7e0e7bda625fcb0e0ae";
 
 // api.openweathermap.org/data/2.5/forecast/daily?q={city name}&cnt={cnt}&appid={API key}
 
@@ -41,7 +43,7 @@ let fetchWeather = function () {
 };
 
 let displayWeather = function (data) {
-    // console.log(data);
+    console.log(data);
     const name = data.name;
     const description = data.weather[0].description;
     const temp = data.main.temp;
@@ -72,9 +74,11 @@ let displayWeather = function (data) {
         result = 1;
     }
 
+    console.log(result);
+
     if (data.weather[0].main == "Clouds" && result == 1) {
         weather_img.src = "./images/cloudy night@2x.png";
-        background_img.src = "./images/clear day-bgg.jpg";
+        // background_img.src = "./images/clear day-bgg.jpg";
     } else if (data.weather[0].main == "Clouds" && result == 0) {
         weather_img.src = "./images/Cloudy@2x.png";
     } else if (data.weather[0].main == "Clear" && result == 1) {
@@ -118,7 +122,7 @@ let displayNext1Weather = function (data) {
         result = 1;
     }
     //
-
+    console.log(result);
     //img
     if (data.list[8].weather[0].main == "Clouds" && result == 1) {
         next_1_weather_img.src = "./images/cloudy night@2x.png";
