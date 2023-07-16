@@ -11,10 +11,10 @@ html, body {
     margin: 0;
     padding: 0;
     background-color: black;
-    background-image: url(./images/clear-day-bg.jpg); 
+    background-image: url(./images/cloudy\ night\ bg.jpg); 
     background-size:100% 100%;
     background-repeat: no-repeat;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.7);
+    box-shadow: inset 0 0 0 1000vh rgba(0,0,0,0.7);
 
     /* backdrop-filter: blur(2px); */
 }
@@ -36,6 +36,10 @@ html, body {
     font-size: 16px;
   }
 
+.image-weather-box{
+  margin-block-start: 10px;
+  margin-block-end: 15px;
+}
   .image-weather{
     height: 250px;
     width:250px;
