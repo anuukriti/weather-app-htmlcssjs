@@ -6,9 +6,7 @@ const next_4_weather_img = document.querySelector(".next-day-4-img");
 const next_5_weather_img = document.querySelector(".next-day-5-img");
 const background_img = document.querySelector("background");
 
-let all_result_time;
 let apiKey = "cce930f08cacb20cf68ebac8469d7eac";
-let apiKey2 = "fcb7f9fc8cceb7e0e7bda625fcb0e0ae";
 
 // api.openweathermap.org/data/2.5/forecast/daily?q={city name}&cnt={cnt}&appid={API key}
 
@@ -51,7 +49,7 @@ let displayWeather = function (data) {
     const speed = data.wind.speed;
     const pressure = data.main.pressure;
     const country = data.sys.country;
-    const time = data.coord.dt;
+    const time = data.dt;
     const day = new Date().toLocaleDateString("en-EN", { weekday: "long" });
     // console.log(name, description, temp, humidity, speed);
 
@@ -73,8 +71,6 @@ let displayWeather = function (data) {
     } else {
         result = 1;
     }
-
-    all_result_time = result;
 
     if (data.weather[0].main == "Clouds" && result == 1) {
         weather_img.src = "./images/cloudy night@2x.png";
