@@ -1,3 +1,5 @@
+alert("Type location in the search box");
+
 const weather_img = document.querySelector(".image-weather");
 const next_1_weather_img = document.querySelector(".next-day-1-img");
 const next_2_weather_img = document.querySelector(".next-day-2-img");
